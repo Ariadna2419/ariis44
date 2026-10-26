@@ -1,0 +1,256 @@
++<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de mi autobiografía</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3e5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .quiz-container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 12px #c5a3d5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4824aa;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .question-group {
+            background: #faf5fc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #6a68c8;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            margin-right: 8px;
+            accent-color: #8605aa;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #a593d8;
+            border-radius: 7px;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background: #8e24aa;
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #6a1b9a;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #6a1b9a;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+
+    <h1>Cuestionario de mi autobiografía</h1>
+
+    <p class="intro">
+        ¡Hola! Gracias por visitar mi página.
+        Contesta estas preguntas para conocer tu opinión.
+    </p>
+
+    <form id="quiz-form">
+
+        <div class="question-group">
+            <p class="question">1. ¿Qué te pareció la autobiografía?</p>
+            <label><input type="radio" name="q1" value="Buena" required> Buena</label>
+            <label><input type="radio" name="q1" value="Agradable"> Agradable</label>
+            <label><input type="radio" name="q1" value="Mala"> Mala</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">2. ¿Qué fue lo que más te gustó?</p>
+            <label><input type="radio" name="q2" value="La información" required> La información</label>
+            <label><input type="radio" name="q2" value="El diseño"> El diseño</label>
+            <label><input type="radio" name="q2" value="Las fotografías"> Las fotografías</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">3. ¿Ya me conocías antes de visitar la página?</p>
+            <label><input type="radio" name="q3" value="Sí" required> Sí</label>
+            <label><input type="radio" name="q3" value="No"> No</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">4. ¿Qué te gustaría saber más sobre mí?</p>
+            <textarea name="q4" rows="3" placeholder="Escribe tu respuesta..."></textarea>
+        </div>
+
+        <div class="question-group">
+            <p class="question">5. ¿Qué parte de mi vida te pareció más interesante?</p>
+            <textarea name="q5" rows="3" placeholder="Escribe tu respuesta..."></textarea>
+        </div>
+
+        <div class="question-group">
+            <p class="question">6. ¿Crees que mi autobiografía refleja mi personalidad?</p>
+            <label><input type="radio" name="q6" value="Sí, mucho" required> Sí, mucho</label>
+            <label><input type="radio" name="q6" value="Un poco"> Un poco</label>
+            <label><input type="radio" name="q6" value="No"> No</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">7. ¿Qué opinas de la información que se compartió aquí?</p>
+            <label><input type="radio" name="q7" value="Interesante" required> Interesante</label>
+            <label><input type="radio" name="q7" value="Divertida"> Divertida</label>
+            <label><input type="radio" name="q7" value="Puede mejorar"> Puede mejorar</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">8. ¿Ya habías visto alguna vez una autobiografía así?</p>
+            <label><input type="radio" name="q8" value="Sí" required> Sí</label>
+            <label><input type="radio" name="q8" value="No"> No</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">9. ¿Conocías dónde estudié?</p>
+            <label><input type="radio" name="q9" value="Sí" required> Sí</label>
+            <label><input type="radio" name="q9" value="No"> No</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">10. ¿Qué valor crees que me caracteriza más?</p>
+            <label><input type="radio" name="q10" value="Respeto" required> Respeto</label>
+            <label><input type="radio" name="q10" value="Responsabilidad"> Responsabilidad</label>
+            <label><input type="radio" name="q10" value="Amistad"> Amistad</label>
+            <label><input type="radio" name="q10" value="Honestidad"> Honestidad</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">11. ¿Qué consejo me darías para mejorar el sitio web?</p>
+            <textarea name="q11" rows="3" placeholder="Escribe tu consejo..."></textarea>
+        </div>
+
+        <div class="question-group">
+            <p class="question">12. ¿Qué crees que es lo más importante de lo que mencioné?</p>
+            <textarea name="q12" rows="3" placeholder="Escribe tu respuesta..."></textarea>
+        </div>
+
+        <div class="question-group">
+            <p class="question">13. ¿Conocías algunos de mis gustos?</p>
+            <label><input type="radio" name="q13" value="Sí, varios" required> Sí, varios</label>
+            <label><input type="radio" name="q13" value="Algunos"> Algunos</label>
+            <label><input type="radio" name="q13" value="Ninguno"> Ninguno</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">14. ¿Qué emoción te provoca ver más sobre mí?</p>
+            <label><input type="radio" name="q14" value="Alegría" required> Alegría</label>
+            <label><input type="radio" name="q14" value="Nostalgia"> Nostalgia</label>
+            <label><input type="radio" name="q14" value="Curiosidad"> Curiosidad</label>
+            <label><input type="radio" name="q14" value="Ninguna"> Ninguna</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">15. ¿Para ti fue importante conocer más sobre mí?</p>
+            <label><input type="radio" name="q15" value="Sí" required> Sí</label>
+            <label><input type="radio" name="q15" value="Más o menos"> Más o menos</label>
+            <label><input type="radio" name="q15" value="No"> No</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">16. ¿Qué te gustaría saber de mi infancia?</p>
+            <textarea name="q16" rows="3" placeholder="Escribe tu respuesta..."></textarea>
+        </div>
+
+        <div class="question-group">
+            <p class="question">17. ¿Qué crees que me motivó a ser lo que soy?</p>
+            <textarea name="q17" rows="3" placeholder="Escribe tu respuesta..."></textarea>
+        </div>
+
+        <div class="question-group">
+            <p class="question">18. ¿Hay alguna canción que te recuerde a mí?</p>
+            <input type="text" name="q18" placeholder="Nombre de la canción">
+        </div>
+
+        <div class="question-group">
+            <p class="question">19. ¿Conoces a alguna de las amigas que mencioné?</p>
+            <label><input type="radio" name="q19" value="Sí" required> Sí</label>
+            <label><input type="radio" name="q19" value="No"> No</label>
+        </div>
+
+        <div class="question-group">
+            <p class="question">20. ¿Qué mensaje te gustaría dejarme después de visitar mi página?</p>
+            <textarea name="q20" rows="4" placeholder="Déjame un mensaje..."></textarea>
+        </div>
+
+        <button type="submit">Enviar respuestas</button>
+
+    </form>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+    const formulario = document.getElementById("quiz-form");
+    const resultado = document.getElementById("result");
+
+    formulario.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        resultado.textContent =
+            "¡Gracias por responder mi cuestionario! 💜";
+
+        formulario.reset();
+    });
+</script>
+
+</body>
+</html>
